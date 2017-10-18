@@ -399,7 +399,7 @@ public class AutoComplete {
         Entity.Builder tagEntity = Entity.newBuilder();
         properties.put("tag", makeValue(tag.value).build());
         properties.put("count", makeValue(tag.count).build());
-        candidates.add(makeValue(tagEntity).build());
+        candidates.add(makeValue(tag.value).build());
       }
       properties.put("candidates", makeValue(candidates).build());
       entityBuilder.putAllProperties(properties);
